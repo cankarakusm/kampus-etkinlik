@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-baslik {
+  background-color: #2e5a27;
+  color: white;
+  padding: 2.5rem 2rem;
+  text-align: right;
+}
+
+.site-baslik h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-baslik p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Navigasyon */
+.site-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 2rem;
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.site-nav li a {
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav li.aktif a {
+  color: #2e5a27;
+  border-bottom-color: #2e5a27;
+  font-weight: 700;
+}
+
+/* Ana İçerik */
+.ana-icerik {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.ana-icerik h2 {
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+/* Kartlar ve Liste */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  color: #2d3748;
+}
+
+.kategori-etiket {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.ozet {
+  color: #4a5568;
+  line-height: 1.5;
+  margin: 0.25rem 0;
+}
+
+/* Butonlar */
+.btn-detay, .btn-primary, .btn-secondary, .btn-submit {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.btn-detay, .btn-primary, .btn-submit {
+  background-color: #2e5a27;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  margin-right: 0.5rem;
+}
+
+/* Filtre Kutusu */
+.filtre-kutusu {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.filtre-grup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.filtre-grup label, .form-grup label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.filtre-grup input, .filtre-grup select, .form-grup input, .form-grup select, .form-grup textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.filtre-sayac {
+  margin-bottom: 1rem;
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+/* Detay Sayfası */
+.event-detail-container {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.detail-kunye, .detail-aciklama {
+  margin-bottom: 1.5rem;
+}
+
+.detail-kunye h3, .detail-aciklama h3 {
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 0.4rem;
+}
+
+.detail-kunye p {
+  margin: 0.4rem 0;
+}
+
+.detail-butonlar {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Form Alanı */
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #718096;
+  margin-top: auto;
+}

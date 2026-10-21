@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlik Ekle</title>
+  <link rel="stylesheet" href="css/2416501042.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Etkinlik Ekle</h1>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html">Etkinlikler</a>
+      <a href="etkinlik-ekle.html">Ekle</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Yıldızlı (*) alanlar zorunludur.</p>
+    <form id="etkinlik-formu" novalidate>
+      <div>
+        <label for="ad">Etkinlik Adı *</label>
+        <input type="text" id="ad" name="ad">
+        <span class="hata" id="hata-ad"></span>
+      </div>
+
+      <div>
+        <label for="kategori">Kategori *</label>
+        <select id="kategori" name="kategori">
+          <option value="">Seçiniz</option>
+          <option value="Seminer">Seminer</option>
+          <option value="Atölye">Atölye</option>
+          <option value="Söyleşi">Söyleşi</option>
+        </select>
+        <span class="hata" id="hata-kategori"></span>
+      </div>
+
+      <div>
+        <label for="tarih">Tarih *</label>
+        <input type="date" id="tarih" name="tarih">
+        <span class="hata" id="hata-tarih"></span>
+      </div>
+
+      <div>
+        <label for="saat">Saat *</label>
+        <input type="time" id="saat" name="saat">
+        <span class="hata" id="hata-saat"></span>
+      </div>
+
+      <div>
+        <label for="yer">Yer *</label>
+        <input type="text" id="yer" name="yer">
+        <span class="hata" id="hata-yer"></span>
+      </div>
+
+      <div>
+        <label for="kontenjan">Kontenjan</label>
+        <input type="number" id="kontenjan" name="kontenjan">
+        <span class="hata" id="hata-kontenjan"></span>
+      </div>
+
+      <div>
+        <label for="aciklama">Açıklama</label>
+        <textarea id="aciklama" name="aciklama" rows="4"></textarea>
+      </div>
+
+      <button type="submit" id="btn-kaydet">Kaydet</button>
+    </form>
+
+    <div id="form-mesaj"></div>
+  </main>
+</body>
+</html>
